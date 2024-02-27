@@ -23,7 +23,8 @@ resource "aws_security_group" "vpc-ssh" {
   }
 }
 
-# Create Security Group - Web Traffic
+# Create Security Group - Web traffic
+#This coming from web allow port 80 only
 resource "aws_security_group" "vpc-web" {
   name        = "vpc-web"
   description = "Dev VPC Web"
